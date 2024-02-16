@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/text_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email">
+
+    </View>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="@dimen/cardview_50"
+        android:layout_height="@dimen/cardview_50"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_history" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_lichsudonhang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Lịch sử đơn hàng"
+        android:textSize="@dimen/text_size_xxnormal"
+        app:layout_constraintEnd_toEndOf="@+id/txt_email"
+        app:layout_constraintStart_toEndOf="@+id/cardView7"
+        app:layout_constraintTop_toTopOf="@+id/cardView7" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="@dimen/cardview_50"
+        android:layout_height="@dimen/cardview_50"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView7"
+        app:layout_constraintStart_toStartOf="@+id/cardView7"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/change_password" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_doimatkhau"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"
+        android:textSize="@dimen/text_size_xxnormal"
+        app:layout_constraintEnd_toEndOf="@+id/txt_lichsudonhang"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/txt_lichsudonhang"
+        app:layout_constraintTop_toTopOf="@+id/cardView8" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="@dimen/cardview_50"
+        android:layout_height="@dimen/cardview_50"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/logout_24" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_dangxuat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:textSize="@dimen/text_size_xxnormal"
+        app:layout_constraintEnd_toEndOf="@+id/txt_doimatkhau"
+        app:layout_constraintStart_toStartOf="@+id/txt_doimatkhau"
+        app:layout_constraintTop_toTopOf="@+id/cardView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
